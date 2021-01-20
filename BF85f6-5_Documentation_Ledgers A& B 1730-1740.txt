@@ -1,0 +1,141 @@
+American Philosophical Society Library & Museum
+Dataset documentation: Ledger A, 1730-1740 (BF85f6-5)
+
+---
+Contents:
+	Document type
+	Dataset identifier
+	File format
+	Abstract
+	Time Period, Start Date of Data Coverage
+	Time Period, End Date of Data Coverage
+	Date of this version
+	Source(s)
+	Data description
+	Column structure and contents
+	Assumptions
+	Normalization and data standards
+	Related dataset(s)
+	License
+	Caveat Emptor
+	Preferred citation
+	Process & Attribution	
+
+---
+Document type: Dataset
+
+
+Dataset identifier: BF85f6-5
+
+
+File format: CSV
+
+
+Abstract: "This is the earliest known surviving Franklin account book. It was kept by Franklin and his wife,
+Deborah, and very few entries are in other hands. Paper was expensive and ruled books were
+especially dear: therefore, Franklin used the last half of this volume for Ledger B. &quot;Leidger A&quot;
+(Journal) is the front half of the book and the entries are records of sales, purchases, printing
+expenses, bills, etc., under the date of the transaction, and then they were posted under the
+name of the customer in &quot;Leidger B&quot; (Ledger). Beginning with page 169 the Ledger entries
+follow, recording individual customers&#39; accounts. There is an eight page index which precedes
+this Ledger and Franklin, by November 1736 had used all of the pages in the back of the book,
+so he then used the blank pages between the Journal and the Ledger, and numbered the pages
+from front to back. Franklin noted that he had cancelled all of the accounts by March 5, 1757,
+that were either 'settled or not like to be recovered.' Some of these were &quot;Carried to Ledger
+E.'"
+
+
+Time Period, Start Date of Data Coverage: 1730
+Time Period, End Date of Data Coverage: 1740
+
+
+Date of this version: August 2020
+
+
+Source(s):
+Item title: Ledger A, 1730-1740
+Item collection: Miscellaneous Benjamin Franklin Collections, American Philosophical Society.
+Item call number: B F85f6.5
+Finding aid: https://search.amphilsoc.org/collections/view?docId=ead/Mss.B.F85.misc-ead.xml
+Digital surrogate location: https://diglib.amphilsoc.org/islandora/object/text:252294
+
+
+Data description:
+Each row has been assigned a numerical ID ('Sort ID') to allow sorting while preserving the data's context.
+
+Measurements of currency ("Amount due" columns) are likely listed in Philadelphia's local currency rate (which was based on an item's weight). Although also measured in pounds, shillings (abbreviated d.), and pence (abbreviated p.), Philadelphia's currency was not equivalent in value to British Pounds Sterling. Robert Siegel Auction Galleries suggested a 167% inflation factor to convert Pounds Sterling into Philadelphia currency (see https://siegelauctions.com/2007/944/944.pdf page 172). Additionally, prior to 1971, monetary amounts in Great Britain were calculated differently than they are today, so care must be taken with calculations in converting contemporary values to their equivalent modern ones. Prior to that time, £1 = 20s. = 240d.
+
+
+Column structure and contents:
+Sequential ID:
+The sequential id column allows the user to sort the data back into its original order. This is particularly useful when used to find the original entry in the digital object.
+Page Number: 
+Refers to the digital page number. Please note that the pencil page numbers often found on the ledgers does not necessarily parallel the digital page numbers.
+URL:
+Allows the user to refer to the digital object. 
+Title/Prefix/Suffix:
+Included is any entry where this information is included. 
+Surname:
+As spelled in ledger entry. If there is no name attached to the entry, the cell is left blank. Rarely, the Franklins enter the account holder’s name without a surname. This seems to be only when referring to their mothers. When this occurs, the last name is included in brackets. 
+First Name:
+As spelled in ledger entry. If surname is only used, cell is left blank. No corrections to the name are made, unless absolutely necessary and any changes are indicated with brackets.
+Geographic Describer:
+Entered as found in the ledger. Geographic descriptions are useful in pinpointing the identity of the account holder. 
+Occupational/Miscellaneous Describer:
+Entered as found in ledger. 
+Gender:
+This column is constructed from prefixes and given names. There is no way to ensure complete accuracy, but it was considered a useful tool for this project as well as future research.
+Date-Year:
+Years are standardized to the Gregorian Calendar. In the ledgers January 1 through March 25 are commonly notated using Old Style Dating or both. The nature of spreadsheets does not allow for both dating styles. Blank cells denote an absence in the accounts. Brackets refer to notations that are fully or partially illegible. 
+Date-Month:
+The Franklins and the other account keepers often did not note a change in month. A jump in day, for example from the 31st to the 8th, is assumed to indicate a new month. Blank cells denote an absence in the accounts. Brackets refer to notations that are fully or partially illegible. 
+Date-Day:
+Blank cells denote an absence in the accounts. Brackets refer to notations that are fully or partially illegible. 
+Transaction Type:
+Dr refers to a debit on an individual’s account. It means that someone purchased something but did not pay at the moment of transaction by cash or bartering. Cr refers to the payment (most often partial) of their account. Cr does not always mean the account holder paid in cash, bartering was also accepted. When an account holder returned an item, the return is referred to as a credit to their account. Memo is a catchall term used for when the Franklins made a notation about things coming into the shop or transactions that are not debit or credits. These include account adjustments and settlements as well as purchases of goods for the shop. It also includes instances of when someone was given cash on another person’s account as, theoretically, the debit would be placed in the other person’s account. Blank cells denote an absence in the accounts. Brackets refer to notations that are fully or partially illegible. 
+Activity:
+Transcribed as written. Some shorthand is expanded. The abbreviation for Shilling is expanded and placed in brackets. Do (Ditto) is, whenever possible, removed and what is being referred to is put in its place. Whenever this occurs, Do is added in the Notes column. Brackets refer to uncertainty in the transcription or loss.
+Controlled Vocabulary:
+Extrapolated from the Activity line. The controlled vocabulary normalizes the spelling of the contexts of the activity so that it is more easily searchable and sortable. 
+Pounds/Shillings/Pence:
+Columns are separated. Occasionally, more than 20 Shillings are noted, but I chose not to convert them to pounds. 
+Line Total: 
+The sum of all the transactions on a line as written in the ledgers. It should not be used to calculate totals for a day or account holder as the line totals are occasionally incorrect. It should be used to orient the reader when comparing to the digital object. 
+Paid:
+Notates when someone returned and paid for the item. This can be seen in the ledgers via a notation “paid” or through strike throughs. Strike throughs may occasionally be interpreted as errors, however, unless the it was clearly an error, it was interpreted as paid. 
+Notes: 
+Any notes that are written in the marginalia attached to that particular transaction.
+Transcriber’s Notes:
+Whenever there was uncertainty or a decision outside of the norm was made it is documented in this column. 
+
+
+
+Assumptions:
+Dittos (Do.) are silently corrected and assumed to refer to the information in the above row.
+
+
+Normalization and Data Standards:
+Date is separated into year, month, date. Distinct categories in the Controlled Vocabulary column are separated by semicolons rather than commas to preserve CSV structure.
+
+
+Related Dataset(s):
+BF85f6-6; BF85f6-15
+
+
+License:
+These datasets are available for anyone to evaluate, share, reuse, and remix as they wish under a Creative Commons Attribution 4.0 License. Please attribute APS Library & Museum.
+
+
+Caveat Emptor:
+These datasets were created as part of the American Philosophical Society's Open Data Initiative (Learn more at http://diglib.amphilsoc.org/data).
+Although contributors took care to minimize mistakes and inconsistencies in the creation of these items, and have included any assumptions or choices made on their part that may affect interoperability or integrity of the data, APS cannot guarantee that they are free of instances of human error. They are offered "as is," and researchers are encouraged to consult the original records in digital or physical format in the event of uncertainty. If you have feedback or notice errors in the data, please contact us at digitalprojects@amphilsoc.org.
+
+
+Preferred Citation:
+Chicago (16th ed., bibliography): Farrell, Bethany. Ledgers A & B, 1730-1740. Dataset BF85f6-5. Edited by Cynthia Heider. Distributed by Philadelphia: American Philosophical Society Library & Museum, 2020.
+
+
+Process:
+Phase One, September 2019: Digitization by Bayard Miller at APS.
+Phase Two, October 2019-August 2020: Data transcription and structuring by Bethany Farrell.
+Phase Three, November 2020: Documentation created. Dataset edited for clarity and uploaded to APS Digital Library by Cynthia Heider.
